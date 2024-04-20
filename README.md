@@ -109,7 +109,7 @@ curl -v -X PUT \
     -d '{"starRating": "1", "dollarRaing": "1", "review": "Do not wish to return"}' \
     http://localhost:3000/reviews/2
 
-# etc.
+##### etc.
 Make sure you're using Unix newlines in your file (LF), not Windows (CRLF).
 
 You can run this on the command line with sh runtests.sh.

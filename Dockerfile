@@ -1,7 +1,9 @@
 FROM node
-WORKDIR /usr/server
+WORKDIR /usr/src/server
 COPY package*.json .
 RUN npm install
+RUN npm install express
 COPY . .
-EXPOSE 8086
+ENV PORT=8086
+EXPOSE ${PORT}
 CMD [ "npm", "start" ]
